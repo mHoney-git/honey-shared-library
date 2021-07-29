@@ -2,7 +2,7 @@ def call(Map config = [:]){
     pipeline {
 	    environment {
 		    registry="${config.repo}"
-		    registryCredential="Honey_Docker"
+		    registryCredential="AwsCredentials"
 		    dockerImage=""
 	  	  }
     agent any 
